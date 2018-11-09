@@ -172,6 +172,26 @@ public class MyDBAdapter {
 
     }
 
+    public ArrayList<String[]> recuperarAsignatura(String asignaturaInt){
+
+        ArrayList<String[]> asignatura= new ArrayList<String[]>();
+        Cursor cursor = db.query(TABLA_ASIGNATURAS,null,"nombreAsig='"+asignaturaInt+"'",null,null,null,null);
+        if (cursor != null && cursor.moveToFirst()){
+
+            do{
+                String [] valores = new String[2];
+
+                valores[0]=cursor.getString(1);
+                valores[1]=cursor.getString(2);
+
+
+                asignatura.add(valores);
+
+            }while (cursor.moveToNext());
+        }
+        return asignatura;
+
+    }
 
     public ArrayList<String[]> recuperarProfesores(){
 

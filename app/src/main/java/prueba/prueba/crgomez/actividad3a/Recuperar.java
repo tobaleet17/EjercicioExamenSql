@@ -20,12 +20,13 @@ public class Recuperar extends AppCompatActivity {
 
         final TextView textView = (TextView) this.findViewById(R.id.textViewP);
         final EditText ciclo = (EditText) this.findViewById(R.id.meterCurso);
+        final EditText asignaturaInt = (EditText) this.findViewById(R.id.meterAsignatura);
 
         final Button recuperarEstudiantes = (Button) this.findViewById(R.id.btnRecuperarTodos);
         final Button recuperarProfes = (Button) this.findViewById(R.id.RcpProf);
         final Button recuperarTodos = (Button) this.findViewById(R.id.RcpTodos);
         final Button recuperarPorCiclo = (Button) this.findViewById(R.id.EstudianteCur);
-
+        final Button recuperarAsig = (Button) this.findViewById(R.id.RcpAsignatura);
 
         recuperarPorCiclo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -116,9 +117,26 @@ public class Recuperar extends AppCompatActivity {
             }
         });
 
-       // MyDBAdapter actualizar = new MyDBAdapter(getApplicationContext());
-        //actualizar.open();
-        //actualizar.cambioNombre();
+       recuperarAsig.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               MyDBAdapter dbAdapter;
+               dbAdapter = new MyDBAdapter(getApplicationContext());
+               dbAdapter.open();
+               textView.setText("");
+
+               ArrayList<String[]> asignatura = dbAdapter.recuperarAsignatura(asignaturaInt.getText().toString());
+               textView.setText("");
+               for (String[] asig: asignatura){
+
+
+                   textView.setText(textView.getText()+"Número de alumnos: "+asig[1]+"\n");
+
+
+               }
+
+           }
+       });
 
 
 
