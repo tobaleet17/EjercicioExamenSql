@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent" android:padding="20dip" android:orientation="vertical">
+
+    <EditText android:id="@+id/txtNombreAsigna"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="Nombre Asignatura :"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColorHint="@color/colorPrimary"/>
+
+    <EditText android:id="@+id/txtNumAlum"
+        android:layout_marginTop="15dip"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="Numero Alumnos"
+        android:singleLine="true"
+        android:textColorHint="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/btnGuardarAsig"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:text="Guardar" />
+
+</LinearLayout>

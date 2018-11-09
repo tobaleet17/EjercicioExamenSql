@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent" android:padding="20dip" android:orientation="vertical">
+
+    <TextView android:id="@+id/txtNombre"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="Nombre"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColorHint="@color/colorPrimary"/>
+
+    <TextView android:id="@+id/txtNombreId"
+        android:layout_marginTop="15dip"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="Nombre Usuario:"
+        android:singleLine="true"
+        android:textColorHint="@color/colorPrimary"/>
+
+    <TextView android:id="@+id/txtFecha"
+        android:layout_marginTop="15dip"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="Fecha de Nacimiento"
+        android:singleLine="true"
+        android:textColorHint="@color/colorPrimary"/>
+
+
+
+    <TextView android:id="@+id/txtSexo"
+        android:layout_marginTop="15dip"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="Sexo:"
+        android:singleLine="true"
+        android:textColorHint="@color/colorPrimary"/>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent" android:padding="20dip" android:orientation="vertical">
+
+<EditText android:id="@+id/txtNombreProfe"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:hint="Nombre"
+    android:inputType="text"
+    android:singleLine="true"
+    android:textColorHint="@color/colorPrimary"/>
+
+<EditText android:id="@+id/txtEdadProfe"
+android:layout_marginTop="15dip"
+android:layout_height="wrap_content"
+android:layout_width="fill_parent"
+android:hint="Tu Edad:"
+android:singleLine="true"
+android:textColorHint="@color/colorPrimary"/>
+
+    <EditText android:id="@+id/txtCiclo"
+    android:layout_marginTop="15dip"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:hint="Ciclo"
+    android:singleLine="true"
+    android:textColorHint="@color/colorPrimary"/>
+
+    <EditText android:id="@+id/txtCurso"
+        android:layout_marginTop="15dip"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="Curso"
+        android:singleLine="true"
+        android:textColorHint="@color/colorPrimary"/>
+    <EditText android:id="@+id/txtDespacho"
+        android:layout_marginTop="15dip"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="Despacho"
+        android:singleLine="true"
+        android:textColorHint="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:text="Guardar" />
+
+</LinearLayout>

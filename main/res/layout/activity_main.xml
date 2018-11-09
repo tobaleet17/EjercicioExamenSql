@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent" android:padding="20dip" android:orientation="vertical">
+
+    <EditText android:id="@+id/txtUserName"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="Nombre"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColorHint="@color/colorPrimary"/>
+
+    <EditText android:id="@+id/txtNombre"
+        android:layout_marginTop="15dip"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="Nombre Usuario:"
+        android:singleLine="true"
+        android:textColorHint="@color/colorPrimary"/>
+
+    <EditText android:id="@+id/txtFecha"
+        android:layout_marginTop="15dip"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="Fecha de Nacimiento"
+        android:singleLine="true"
+        android:textColorHint="@color/colorPrimary"/>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioFemella"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Mujer" />
+
+        <RadioButton
+            android:id="@+id/radioMascle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Hombre" />
+    </RadioGroup>
+
+
+    <Button android:id="@+id/btnRegister"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="enviar"
+        android:layout_gravity="center"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip" />
+    <Button
+        android:id="@+id/btnRecuperar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:text="Recuperar" />
+    <Button
+        android:id="@+id/btnInsertar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:text="Insertar estudiantes" />
+    <Button
+        android:id="@+id/btnInsertar2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:text="Insertar profesores" />
+
+
+</LinearLayout>
